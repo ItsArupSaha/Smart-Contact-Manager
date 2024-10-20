@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="en"
-th:fragment="parent(content, title)"
-xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html
+  lang="en"
+  class="light"
+  th:fragment="parent(content, title)"
+  xmlns:th="http://www.thymeleaf.org"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title th:replace="${title}">SCM</title>
-    <link th:href="@{'/css/output.css'}" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-</head>
-<body>
+    <link th:href="@{'/css/output.css'}" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="dark:bg-gray-800 dark:text-white">
     <!-- common header -->
-    <div th:replace="navbar :: navbar">
+    <div th:replace="navbar :: navbar"></div>
 
-    </div>
-    
     <!-- main content -->
     <div class="p-4">
-        <section th:replace="${content}">...</section>
+      <section th:replace="${content}">...</section>
     </div>
 
     <!-- common footer -->
-    <footer class="p-4">
-        Footer: Smart Contact Manager
-    </footer>
+    <footer class="p-4">Footer: Smart Contact Manager</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-</body>
+  </body>
 </html>

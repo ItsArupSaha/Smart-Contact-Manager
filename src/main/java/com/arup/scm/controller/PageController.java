@@ -19,7 +19,6 @@ public class PageController {
     }
 
     // about route
-
     @GetMapping("/about")
     public String aboutPage() {
         System.out.println("About page loding....");
@@ -31,6 +30,27 @@ public class PageController {
     public String servicesPage() {
         System.out.println("Services page loding...");
         return "services";
+    }
+
+    // contact route
+    @GetMapping("/contact")
+    public String contactPage() {
+        System.out.println("Contact page loding...");
+        return "contact";
+    }
+
+    // contact route
+    @GetMapping("/login")
+    public String loginPage() {
+        System.out.println("Login page loding...");
+        return "login";
+    }
+
+    // contact route
+    @GetMapping("/register")
+    public String registerPage() {
+        System.out.println("Signup page loding...");
+        return "register";
     }
 
 }
