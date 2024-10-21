@@ -2,7 +2,7 @@
   <div
     class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
   >
-    <!-- Brank -->
+    <!-- Brand -->
     <a
       th:href="@{'/home'}"
       class="flex items-center space-x-3 rtl:space-x-reverse"
@@ -21,7 +21,7 @@
 
     <!-- right side buttons -->
     <div
-      class="flex gap-2 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
+      class="flex gap-3 md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
     >
       <!-- Login -->
       <a
@@ -112,6 +112,15 @@
             >Contact</a
           >
         </li>
+
+        <!-- dark mode/light mode -->
+        <button class="mx-2" id="theme_change_button">
+          <img
+            th:src="@{'/images/dark-mode.png'}"
+            class="h-8"
+            alt="Dark-Mode Logo"
+          />
+        </button>
       </ul>
     </div>
   </div>
